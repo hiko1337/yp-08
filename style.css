@@ -5,6 +5,7 @@ body {
 
 .first-screen {
     background: url(img/introFon.png) center center;
+    background-size: cover;
     display: block;
     height: 100vh;
 }
@@ -18,6 +19,8 @@ body {
 .first-screen__header {
     background-color: rgba(22, 57, 255, 0.5);
     height: 80px;
+    width: 100%;
+    
 }
 
 .first-screen__header__inner {
@@ -120,6 +123,12 @@ body {
     border: 1px solid #005BC1;
     color: #005BC1;
     text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.slider-top__btn__left:hover {
+    background-color: #005bc1;
+    color: #fff;
 }
 
 .slider-top__btn__right {
@@ -130,10 +139,14 @@ body {
     border: 1px solid #005BC1;
     color: #005BC1;
     text-decoration: none;
+    border-right: none;
+    cursor: pointer;
+    transition: .2s;
 }
 
-.slider-top__btn__right {
-    border-right: none;
+.slider-top__btn__right:hover {
+    background-color: #005bc1;
+    color: #fff;
 }
 
 .slider-top__btn {
@@ -144,27 +157,34 @@ body {
 .slider-cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .slider-cards__item {
     background: url(img/proj1.png) center center;
-    width: 380px;
-    height: 240px;
+    width: 100%;
+    height: 340px;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
 }
 
 .slider-cards__item2 {
     background: url(img/proj2.png) center center;
-    width: 380px;
-    height: 240px;
+    width: 100%;
+    height: 340px;
+    background-size: cover;
+    margin: 0 auto;
 }
 
 .slider-cards__item__text {
+    position: absolute;
     background-color: #fff;
     width: 165px;
     height: 100px;
-    margin-left: 180px;
-    margin-top: 125px;
-    padding: 0 10px;
+    margin-left: 580px;
+    margin-top: 200px;
+    padding: 0 10px 10px;
 }
 
 .slider-cards__item__text h3 {
@@ -288,6 +308,7 @@ body {
 .news-main__left {
     display: flex;
     width: 450px;
+    align-items: center;
 }
 
 .news-main__left img {
@@ -428,4 +449,101 @@ body {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+}
+
+
+
+
+
+.sliders{
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+/* .sliders .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border: none !important;
+    box-shadow: none !important;
+} */
+/* Кнопки вперед и назад */
+.sliders .prev, .slider .next {
+    font-size: 20px;
+    font-weight: 700;
+    transform: rotate(180deg);
+    padding: 5px 10px;
+    border: 1px solid #005BC1;
+    color: #005BC1;
+    text-decoration: none;
+}
+.sliders .next {
+    font-size: 20px;
+    font-weight: 700;
+    transform: rotate(180deg);
+    padding: 5px 10px;
+    border: 1px solid #005BC1;
+    color: #005BC1;
+    text-decoration: none;
+}
+
+/* При наведении на кнопки добавляем фон кнопок */
+.sliders .prev:hover,
+.sliders .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 50px 2px -30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.sliders .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
