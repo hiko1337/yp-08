@@ -263,3 +263,124 @@ body {
     font-size: 14px;
     color: #343434;
 }
+.news {
+    margin-bottom: 100px;
+}
+
+.news-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.news-top__left {
+    display: flex;
+    align-items: center;
+}
+
+.news-top__left p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.news-top__btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #005BC1;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news-main {
+    display: flex;
+}
+
+.news-main__left {
+    display: flex;
+    width: 450px;
+    align-items: center;
+}
+
+.news-main__left img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.news-main__left__text {
+    padding-top: -20px;
+    width: 200px;
+}
+
+.news-main__left__text__top {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    justify-content: space-between;
+}
+
+.news-main__left__text__top h1 {
+    color: #343434;
+    font-size: 14px;
+}
+
+.news-main__left__text__top p {
+    color: #979797;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news-main__left__text__mid p {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #343434;
+    
+}
+
+.news-main__left__text__mid a {
+    text-decoration: none;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.news-main__right {
+    display: flex;
+}
+
+.news-main__right__left {
+    margin-left: 20px;
+}
+
+.news-main__right__left h1 {
+    color: #343434;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.news-main__right__left p {
+    color: #343434;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news-main__right__left__down {
+    display: flex;
+}
+
+.news-main__right__left__down img {
+    width: 125px;
+    height: 125px;
+}
+
+.news-main__right__left__down p {
+    color: #979797;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
