@@ -195,3 +195,71 @@ body {
     color: #343434;
     font-weight: 100;
 }
+.rent {
+    margin-bottom: 50px;
+}
+
+.rent-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent-top__left {
+    display: flex;
+    align-items: center;
+}
+
+.rent-top__left img{
+    margin-right: 20px;
+}
+
+.rent-top__left p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.rent-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rent-left {
+    font-size: 14px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    margin-right: 20px;
+}
+
+.rent-right {
+    border: 2px solid #005BC1;
+    padding: 5px 10px;
+}
+
+.rent-right__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent-right__top p {
+    font-family: 'Oswald', sans-serif;
+    margin-right: 50px;
+}
+
+.rent-right__mid__left img {
+    width: 200px;
+}
+
+.rent-right__mid {
+    display: flex;
+}
+
+.rent-right__mid__right p {
+    font-family: 'Oswald', sans-serif;
+}
+
+.rent-right__mid__right li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #343434;
+}
